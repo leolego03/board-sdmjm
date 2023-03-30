@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* global */
+.field-error { border-color: #dc3545; color: #dc3545; }
+
+#hd { width: 100%; height: 60px; display: flex; justify-content: space-between; align-items: center; }
+.hd-tit { padding: 5px 15px; }
+.hd-con { padding: 5px 15px; }
+.hd-con a { display: inline-block; margin: 0 5px; }
+
+#ft { width: 100%; height: 180px; }
+.ft-con { padding: 5px 15px; }
+.ft-con > p { margin: 5px; }
+
+/* home */
+#home { width: 100%; height: 720px; }
+.home-arti { width: 100%; }
+.home-arti-con { padding: 5px 15px; }
+.home-arti-con > table { width: 100%; margin: 15px 0; }
+.home-arti-con > table th { text-align: left; }
+.home-arti-con > button { width: 120px; margin: 5px; }
+
+/* users */
+#user { width: 100%; height: 720px; }
+.user-con { padding: 5px 15px; }
+.user-con > input { width: 360px; margin: 5px; }
+.user-con > label { display: block; width: 120px; margin: 5px; }
+.user-hori-con { display: flex; padding: 5px 15px; }
+.user-hori-con > button { width: 120px; margin: 5px; }
+
+/* articles */
+#arti { width: 100%; height: 720px; }
+.arti-con { padding: 5px 15px; }
+.arti-con > table { width: 100%; margin: 15px 0; }
+.arti-con > table th { text-align: left; }
+.arti-con > button { width: 120px; margin: 5px; }
+.arti-con > input { width: 360px; margin: 5px; }
+.arti-con > label { display: block; width: 120px; margin: 5px; }
+.arti-con > textarea { width: 720px; height: 360px; resize: none; margin: 5px; }
