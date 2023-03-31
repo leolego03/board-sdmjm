@@ -1,0 +1,43 @@
+CREATE SEQUENCE user_seq
+START WITH 0
+INCREMENT BY 1
+MINVALUE 0;
+
+CREATE SEQUENCE content_seq
+START WITH 0
+INCREMENT BY 1
+MINVALUE 0;
+
+CREATE TABLE board_info_table(
+	board_info_idx INT,
+	board_info_name VARCHAR(255) NOT NULL,
+	CONSTRAINT PRIMARY KEY (board_info_idx)
+);
+
+INSERT INTO board_info_table(board_info_idx, board_info_name) VALUES (1, 'free');
+INSERT INTO board_info_table(board_info_idx, board_info_name) VALUES (2, 'gallery');
+INSERT INTO board_info_table(board_info_idx, board_info_name) VALUES (3, 'notice');
+INSERT INTO board_info_table(board_info_idx, board_info_name) VALUES (4, 'qa');
+
+COMMIT;
+
+CREATE TABLE user_table(
+	user_idx INT,
+	user_name VARCHAR(50) NOT NULL,
+	user_id VARCHAR(100) NOT NULL,
+	user_pw VARCHAR(100) NOT NULL,
+	CONSTRAINT PRIMARY KEY (user_idx)
+);
+
+CREATE TABLE article_table(
+	article_idx INT,
+	article_subject VARCHAR(255) NOT NULL,
+	article_content TEXT NOT NULL,
+	article_file VARCHAR(255),
+	article_writer_idx INT NOT NULL,
+	article_board_idx INT NOT NULL,
+	article_date DATETIME NOT NULL,
+	CONSTRAINT PRIMARY KEY (article_idx),
+	CONSTRAINT CONTENT_FK1 FOREIGN KEY (article_writer_idx) REFERENCES user_table(user_idx),
+	CONSTRAINT CONTENT_FK2 FOREIGN KEY (article_board_idx) REFERENCES board_info_table(board_info_idx)
+);

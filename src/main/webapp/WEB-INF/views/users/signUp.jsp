@@ -14,32 +14,34 @@
 	
 	<div id="user">
 		<div class="user-con">
-			<h4>sign up</h4>
-		</div>
+			<div class="user-item">
+				<h4>sign up</h4>
+			</div>
+			
+			<form action="${root }" method="get">
+		        <div class="user-item">
+		            <label for="id">id</label>
+		            <input type="text" id="loginId" placeholder="Enter id">
+		        </div>
+		        
+		        <div class="user-item">
+		            <label for="password">password</label>
+		            <input type="password" id="password" placeholder="Enter password">
+		        </div>
+		        
+		        <div class="user-item">
+		            <label for="name">name</label>
+		            <input type="text" id="name" placeholder="Enter name">
+		        </div>
 		
-		<form action="${root }" method="get">
-	        <div class="user-con">
-	            <label for="id">id</label>
-	            <input type="text" id="loginId" placeholder="Enter id">
-	        </div>
-	        
-	        <div class="user-con">
-	            <label for="password">password</label>
-	            <input type="password" id="password" placeholder="Enter password">
-	        </div>
-	        
-	        <div class="user-con">
-	            <label for="name">name</label>
-	            <input type="text" id="name" placeholder="Enter name">
-	        </div>
-	
-	        <div class="user-hori-con">
-	            <button type="submit">sign up</button>
-	
-	            <button onclick="location.href='${root }'"
-	                    type="button">cancel</button>
-	        </div>
-		</form>
+		        <div class="user-hori-item">
+		            <button type="submit">sign up</button>
+		
+		            <button onclick="location.href='${root }'"
+		                    type="button">cancel</button>
+		        </div>
+			</form>
+		</div>
 	</div>
 	
 	<c:import url="/WEB-INF/views/include/footer.jsp"></c:import>

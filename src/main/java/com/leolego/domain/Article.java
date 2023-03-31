@@ -1,4 +1,4 @@
-package com.leolego.board.domain;
+package com.leolego.domain;
 
 public class Article {
 

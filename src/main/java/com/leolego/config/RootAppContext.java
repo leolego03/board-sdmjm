@@ -1,4 +1,4 @@
-package com.leolego.board.config;
+package com.leolego.config;
 
 import org.springframework.context.annotation.Configuration;
 

@@ -14,29 +14,29 @@
 
 	<div id="user">
 		<div class="user-con">
-			<h4>login</h4>
+			<div class="user-item">
+				<h4>login</h4>
+			</div>
+		
+			<form action="${root }" method="get">
+		        <div class="user-item">
+		            <label for="id">id</label>
+		            <input type="text" id="id" placeholder="Enter id">
+		        </div>
+		        
+		        <div class="user-item">
+		            <label for="password">password</label>
+		            <input type="password" id="password" placeholder="Enter password">
+		        </div>
+		
+		        <div class="user-hori-item">
+		            <button type="submit">login</button>
+		
+		            <button onclick="location.href='${root }'"
+		                    type="button">cancel</button>
+		        </div>
+			</form>
 		</div>
-	
-		<form action="${root }" method="get">
-			
-	        <div class="user-con">
-	            <label for="id">id</label>
-	            <input type="text" id="id" placeholder="Enter id">
-	        </div>
-	        
-	        <div class="user-con">
-	            <label for="password">password</label>
-	            <input type="password" id="password" placeholder="Enter password">
-	        </div>
-	
-	        <div class="user-hori-con">
-	            <button type="submit">login</button>
-	
-	            <button onclick="location.href='${root }'"
-	                    type="button">cancel</button>
-	        </div>
-			
-		</form>
 	</div>
 
 	<c:import url="/WEB-INF/views/include/footer.jsp"></c:import>

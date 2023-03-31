@@ -1,4 +1,4 @@
-package com.leolego.board.controller;
+package com.leolego.controller;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.leolego.board.domain.Article;
-import com.leolego.board.service.ArticleService;
+import com.leolego.domain.Article;
+import com.leolego.service.ArticleService;
 
 @Controller
 public class HomeController {

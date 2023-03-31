@@ -4,5 +4,5 @@
 <c:set var="root" value="${pageContext.request.contextPath }/"/>
 <script>
 	alert("Article deleted")
-	location.href = "${root }articles"
+	location.href = "${root }board"
 </script>

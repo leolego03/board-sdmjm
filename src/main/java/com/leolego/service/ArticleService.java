@@ -1,4 +1,4 @@
-package com.leolego.board.service;
+package com.leolego.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +8,8 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.leolego.board.dao.ArticleDao;
-import com.leolego.board.domain.Article;
+import com.leolego.domain.Article;
+import com.leolego.dao.ArticleDao;
 
 @Service
 public class ArticleService {

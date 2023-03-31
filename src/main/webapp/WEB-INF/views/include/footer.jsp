@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <div id="ft">
 	<div class="ft-con">
-		<p>Copyright 2022 leolego</p>
+		<div class="ft-item">
+			<p>Copyright 2022 leolego</p>
+		</div>
 	</div>
 </div>

@@ -1,4 +1,4 @@
-package com.leolego.board.controller;
+package com.leolego.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

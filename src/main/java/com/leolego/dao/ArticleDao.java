@@ -1,4 +1,4 @@
-package com.leolego.board.dao;
+package com.leolego.dao;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 
-import com.leolego.board.domain.Article;
+import com.leolego.domain.Article;
 
 @Repository
 public class ArticleDao {

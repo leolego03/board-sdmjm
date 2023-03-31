@@ -1,4 +1,4 @@
-package com.leolego.board.controller;
+package com.leolego.controller;
 
 import java.util.List;
 
@@ -8,41 +8,41 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.leolego.board.domain.Article;
-import com.leolego.board.service.ArticleService;
+import com.leolego.domain.Article;
+import com.leolego.service.ArticleService;
 
 @Controller
-@RequestMapping("/articles")
-public class ArticleController {
+@RequestMapping("/board")
+public class BoardController {
 
 	@Autowired
 	private ArticleService articleService;
 	
 	@GetMapping
-	public String articles(Model model) {
+	public String board(Model model) {
 		List<Article> articles = articleService.findAll();
 		model.addAttribute("articles", articles);
 		
-		return "articles/list";
+		return "board/list";
 	}
 	
 	@GetMapping("/view")
-	public String article() {
-		return "articles/view";
+	public String view() {
+		return "board/view";
 	}
 	
 	@GetMapping("/write")
 	public String write() {
-		return "articles/write";
+		return "board/write";
 	}
 	
 	@GetMapping("/modify")
 	public String modify() {
-		return "articles/modify";
+		return "board/modify";
 	}
 	
 	@GetMapping("/delete")
 	public String delete() {
-		return "articles/delete";
+		return "board/delete";
 	}
 }
