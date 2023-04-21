@@ -4,7 +4,7 @@
 <div id="ft">
 	<div class="ft-con">
 		<div class="ft-item">
-			<p>Copyright 2022 leolego</p>
+			<p>Copyright 2023 leolego</p>
 		</div>
 	</div>
 </div>

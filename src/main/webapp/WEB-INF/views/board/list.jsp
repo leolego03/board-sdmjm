@@ -6,6 +6,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>list</title>
 	<link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -18,7 +19,7 @@
 				<h4>board</h4>
 			</div>
 		
-			<div class="arti-item">
+			<div class="arti-tbl">
 				<table>
 					<thead>
 						<tr>
@@ -37,15 +38,13 @@
 				</table>
 			</div>
 			
-			<div class="arti-item">
+			<div class="arti-hori-item">
 		        <button onclick="location.href='board/write'" type="button">
 					write
 				</button>
-		    </div>
-		    
-		    <div class="arti-item">
+
 		    	<button onclick="location.href='${root }'" type="button">
-					home
+					return
 				</button>
 		    </div>
 	    </div>

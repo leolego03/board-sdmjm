@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var='root' value="${pageContext.request.contextPath }/"/>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>home</title>
 	<link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -13,32 +15,22 @@
 	
 	<div id="home">
 		<div class="home-con">
-			<div class="home-item">
-				<h4>board</h4>
-			</div>
-		
-			<div class="home-item">
-				<table>
-					<thead>
-						<tr>
-							<th>article id</th>
-							<th>subject</th>
-						</tr>
-					</thead>
-					<tbody>
-						<c:forEach var="article" items="${articles }">
-							<tr>
-								<td><a href="board/view">${article.id }</a></td>
-				                <td><a href="board/view">${article.subject }</a></td>
-							</tr>
-						</c:forEach>
-					</tbody>
-				</table>
-			</div>
-		    
-		    <div class="home-item">
-		        <button onclick="location.href='board'"
-		                type="button">more</button>
+		    <div class="home-hori-item">
+		        <button onclick="location.href='${root }board'"
+		                type="button">free
+		        </button>
+		        
+		        <button onclick="location.href='${root }'"
+		                type="button">gallery
+		        </button>
+		        
+		        <button onclick="location.href='${root }'"
+		                type="button">notice
+		        </button>
+		        
+		        <button onclick="location.href='${root }'"
+		                type="button">qa
+		        </button>
 		    </div>
 		</div>
 	</div>

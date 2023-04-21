@@ -6,6 +6,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>write</title>
 	<link rel="stylesheet" href="${root }static/css/style.css">
 </head>
@@ -36,13 +37,14 @@
 		        	<input type="file" id="file" accept="image/*"/>
 		        </div>
 		
-		        <div class="arti-item">
-		            <button type="submit">submit</button>
-		        </div>    
-		        
-		        <div class="arti-item">
+		        <div class="arti-hori-item">
+		            <button type="submit">
+		            	submit
+		            </button>
+
 		            <button onclick="location.href='${root }board'"
-		                    type="button">cancel</button>
+		            		type="button">cancel
+		            </button>
 		        </div>
 			</form>
 		</div>

@@ -6,6 +6,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>signUp</title>
 	<link rel="stylesheet" href="${root }static/css/style.css">
 </head>
@@ -35,10 +36,14 @@
 		        </div>
 		
 		        <div class="user-hori-item">
-		            <button type="submit">sign up</button>
+		            <button type="submit">
+		            	sign up
+		            </button>
 		
 		            <button onclick="location.href='${root }'"
-		                    type="button">cancel</button>
+		                    type="button">
+		            	cancel
+		            </button>
 		        </div>
 			</form>
 		</div>
