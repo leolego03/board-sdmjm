@@ -56,7 +56,7 @@ Add value to "db.properties":
 Open the project on the IDE you're using
 ```
 Eclipse:
-  Import maven project -> Run as -> Java application / Spring boot app
+  Import maven project -> Run as -> Run on server -> Choose an existing server -> Select Tomcat v9.0 Server at localhost -> Finish
 ```
 
 2. Login   
